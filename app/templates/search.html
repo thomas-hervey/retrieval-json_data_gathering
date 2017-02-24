@@ -1,0 +1,14 @@
+<table>
+    <tr valign="top">
+        <td><img src="{{ search.author.avatar(50) }}"></td>
+        <tr valign="top"><td>ID: {{ search.id }}</td></tr>
+        <tr valign="top"><td>URL: {{ search.url }}</td></tr>
+        <tr valign="top"><td>is_api: {{ search.is_api }}</td></tr>
+        <tr valign="top"><td>netloc: {{ search.netloc }}</td></tr>
+        <tr valign="top"><td>path: {{ search.path }}</td></tr>
+    </tr>
+</table>
+<a href="{{ url_for('delete', id = search.id) }}">{{ ('Delete Search') }}</a>
+{% if search.data_info.id is equalto search.id %}<a href="{{ url_for('explore', id = search.id) }}">Explore Data</a>
+{% else %}<a href="{{ url_for('create', id = search.id) }}">Create Data</a>{% endif %}
+<p>-----------------------</p>

@@ -1,0 +1,15 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+{% block content %}
+{#<table>#}
+{#    <tr valign="top">#}
+{#        <tr valign="top"><td>ID: {{ data.id }}</td></tr>#}
+{#        <tr valign="top"><td>Search: {{ data.search }}</td></tr>#}
+{#        <tr valign="top"><td>r: {{ data.r }}</td></tr>#}
+{#        <tr valign="top"><td>schema: {{ data.schema }}</td></tr>#}
+{#        <tr valign="top"><td>data: {{ data.data }}</td></tr>#}
+{#    </tr>#}
+{#</table>#}
+<h1>This is the explore data for id: {{ data.id }}</h1>
+{#<a href="{{ url_for('user', nickname=g.user.nickname) }}">Return</a>#}
+{% endblock %}

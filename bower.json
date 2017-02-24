@@ -1,0 +1,21 @@
+{
+  "name": "retrieval",
+  "homepage": "https://github.com/tomtom92/retrieval",
+  "authors": [
+    "Thomas Hervey <thomasahervey@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "react": "^15.2.0"
+  }
+}

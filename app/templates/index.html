@@ -1,0 +1,19 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Hi, {{g.user.nickname}}!</h1>
+        <form action="" method="post" name="Search">
+        {{ form.hidden_tag() }}
+        <p>
+            Please enter the URL of the data source:<br>
+            {{ form.source_url(size=100) }}
+            {% for error in form.source_url.errors %}
+              <span style="color: red;">[{{error}}]</span>
+            {% endfor %}<br>
+        </p>
+        <p>{{ form.is_api }} This is an API endpoint (not to be crawled)</p>
+        <p><input type="submit" value="Submit"></p>
+    </form>
+{% endblock %}
+
